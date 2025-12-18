@@ -33,7 +33,7 @@ jobs:
       - uses: vmactions/freebsd-vm@v1
         with:
           copyback: false
-          release: "14.2"
+          release: "14.3"
       - shell: freebsd {0}
         run: set -ex && pkg update && pkg install -y git
       - run: echo "connect with 'ssh freebsd'"
