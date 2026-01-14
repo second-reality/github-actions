@@ -38,3 +38,15 @@ jobs:
         run: set -ex && pkg update && pkg install -y git
       - run: echo "connect with 'ssh freebsd'"
       - uses: mxschmitt/action-tmate@v3
+
+  debug-netbsd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: vmactions/netbsd-vm@v1
+        with:
+          copyback: false
+          release: "10.1"
+      - shell: netbsd {0}
+        run: set -ex && pkg_add pkgin && pkgin -y install git
+      - run: echo "connect with 'ssh netbsd'"
+      - uses: mxschmitt/action-tmate@v3

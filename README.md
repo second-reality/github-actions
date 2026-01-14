@@ -1,5 +1,5 @@
-Free SSH access to Windows/Linux/MacOS runners
-==============================================
+SSH access to Windows/Linux/MacOS/BSD runners
+=============================================
 
 GitHub offers unlimited and free CI minutes to all public repositories.
 
@@ -19,6 +19,7 @@ Supported x86_64 runners:
 - windows-2025
 - macos-15-intel
 - freebsd (using [freebsd-vm](https://github.com/vmactions/freebsd-vm))
+- netbsd (using [netbsd-vm](https://github.com/vmactions/netbsd-vm))
 
 Supported arm64 runners:
 - ubuntu-24.04-arm
